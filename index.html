@@ -4,76 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Press+Start+2P&family=Roboto&display=swap"
+ rel="stylesheet">
     <title>Formulário</title>
 </head>
 <body>
 
-    <h1>Formulário</h1>
-    <div class="form">
-        <div class="username">
-            <label>Nome:</label>
-            <input type="text" placeholder="Digite o seu nome">
-        </div>
+    
+    <div class="container">
+        <h1>Formulário</h1>
+        <form id="form" class="form">
+            <div class="form2">
+                <label for="username">Nome:</label>
+                <input type="text" placeholder="Digite o seu nome">
+            </div>
+    
+            <div class="form2">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Digite o seu email">
+            </div>
+    
+            <div class="form2">
+                <label for="tel">Telefone:</label>
+                <input type="tel" placeholder="Digite o seu número de telefone">
+            </div>
+            
+    
+            <div class="form2">
+                <label>Gênero</label><br>
+                <label>Feminino</label><input type="radio" name="genero">
+                <label>Masculino</label><input type="radio" name="genero">
+                <label>Outro</label><input type="radio" name="genero">
+            </div>
+    
+            <div class="form2">
+                <label for="genero">Gênero</label>
+                <input type="text" list="genero" placeholder="Selecione seu gênero">
+                <datalist id="genero">
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Outros</option>
+                </datalist>
+            </div>
+    
+            <div class="form2">
+                <label for="civil">Estado civil</label>
+                <input type="text" list="genero" placeholder="Selecione seu estado civil">
+                <datalist id="civil">
+                    <option>Solteiro</option>
+                    <option>Casado</option>
+                    <option>Viúvo</option>
+                    <option>Divorciado</option>
+                </datalist>
+            </div>
+    
+            <div class="form2">
+                <label for="data">Data de Nascimento:</label>
+            <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Dia" required>
+            <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mês" required>
+            <input type="number" id="ano" name="ano" min="1900" max="2023" placeholder="Ano" required><br><br>
+            
+    
+    
+            <div class="form2">
+                <label for="senha">Crie sua senha</label>
+                <input type="password" placeholder="Digite o sua senha">
+    
+            </div>
+    
+            <div class="fomr2">
+                <label for="senhaConfirm">Confirme sua senha</label>
+                <input type="password" placeholder="Confirme a sua senha">
+    
+            </div>
 
-        <div class="email">
-            <label>Email:</label>
-            <input type="email" placeholder="Digite o seu email">
-        </div>
-
-        <div class="tel">
-            <label>Telefone:</label>
-            <input type="tel" placeholder="Digite o seu número de telefone">
-        </div>
-        
-
-        <div>
-            <label>Gênero</label><br>
-            <label>Feminino</label><input type="radio" name="genero">
-            <label>Masculino</label><input type="radio" name="genero">
-            <label>Outro</label><input type="radio" name="genero">
-        </div>
-
-        <div class="genero">
-            <label>Gênero</label>
-            <input type="text" list="genero" placeholder="Selecione seu gênero">
-            <datalist id="genero">
-                <option>Feminino</option>
-                <option>Masculino</option>
-                <option>Outros</option>
-            </datalist>
-        </div>
-
-        <div class="civil">
-            <label>Estado civil</label>
-            <input type="text" list="genero" placeholder="Selecione seu estado civil">
-            <datalist id="civil">
-                <option>Solteiro</option>
-                <option>Casado</option>
-                <option>Viúvo</option>
-                <option>Divorciado</option>
-            </datalist>
-        </div>
-
-        <div>
-            <label>Data de Nascimento:</label>
-        <!-- Três campos separados para dia, mês e ano -->
-        <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Dia" required>
-        <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mês" required>
-        <input type="number" id="ano" name="ano" min="1900" max="2023" placeholder="Ano" required>
-        
-
-
-        <div class="senha">
-            <label>Crie sua senha</label>
-            <input type="password" placeholder="Digite o sua senha">
-
-        </div>
-
-        <div class="senhaConfirm">
-            <label>Confirme sua senha</label>
-            <input type="password" placeholder="Confirme a sua senha">
-
-        </div>
+        </form>
     </div>
 
     

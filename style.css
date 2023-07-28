@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+   text-align: center;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(158, 211, 194);
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width:480px;
+    height: 600px;
+}
+.form{
+    padding: 18px;
+}
+.form2{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
