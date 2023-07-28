@@ -15,51 +15,22 @@
         <h1>Formulário</h1>
         <form id="form" class="form">
             <div class="form2">
-                <label for="username">Nome:</label>
-                <input type="text" placeholder="Digite o seu nome">
+                <label for="username">Nome</label>
+                <input type="text" id="username" placeholder="Digite o seu nome">
             </div>
     
             <div class="form2">
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Digite o seu email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite o seu email">
             </div>
     
             <div class="form2">
-                <label for="tel">Telefone:</label>
-                <input type="tel" placeholder="Digite o seu número de telefone">
-            </div>
-            
-    
-            <div class="form2">
-                <label>Gênero</label><br>
-                <label>Feminino</label><input type="radio" name="genero">
-                <label>Masculino</label><input type="radio" name="genero">
-                <label>Outro</label><input type="radio" name="genero">
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel" placeholder="Digite o seu número de telefone">
             </div>
     
             <div class="form2">
-                <label for="genero">Gênero</label>
-                <input type="text" list="genero" placeholder="Selecione seu gênero">
-                <datalist id="genero">
-                    <option>Feminino</option>
-                    <option>Masculino</option>
-                    <option>Outros</option>
-                </datalist>
-            </div>
-    
-            <div class="form2">
-                <label for="civil">Estado civil</label>
-                <input type="text" list="genero" placeholder="Selecione seu estado civil">
-                <datalist id="civil">
-                    <option>Solteiro</option>
-                    <option>Casado</option>
-                    <option>Viúvo</option>
-                    <option>Divorciado</option>
-                </datalist>
-            </div>
-    
-            <div class="form2">
-                <label for="data">Data de Nascimento:</label>
+                <label for="data">Data de Nascimento</label><br>
             <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Dia" required>
             <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mês" required>
             <input type="number" id="ano" name="ano" min="1900" max="2023" placeholder="Ano" required><br><br>
@@ -68,15 +39,16 @@
     
             <div class="form2">
                 <label for="senha">Crie sua senha</label>
-                <input type="password" placeholder="Digite o sua senha">
+                <input type="password" id="senha" placeholder="Digite o sua senha">
     
             </div>
     
             <div class="fomr2">
                 <label for="senhaConfirm">Confirme sua senha</label>
-                <input type="password" placeholder="Confirme a sua senha">
+                <input type="password" id="senhaConfirm" placeholder="Confirme a sua senha">
     
             </div>
+            <button>Enviar</button>
 
         </form>
     </div>

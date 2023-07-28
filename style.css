@@ -15,15 +15,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(158, 211, 194);
+    background: linear-gradient(90deg, #afd6ef 0%, #4dafb1 100%);
 }
 
 .container{
-    background-color: #fff;
+    background-color: #ffffffea;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     width:480px;
-    height: 600px;
+    height: 730px;
 }
 .form{
     padding: 18px;
@@ -33,3 +33,48 @@ body{
     padding-bottom: 20px;
     position: relative;
 }
+
+.form2 label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#username, #email, #tel, #senha, #senhaConfirm{
+    border: 2px solid #dcdcdc;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+/* Estilizando o campo de data de nascimento */
+.form2 input[type="number"] {
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 30%; 
+    padding: 10px;
+}
+.form2 label[for="dia"],
+.form2 label[for="mes"],
+.form2 label[for="ano"] {
+    text-align: center;
+}
+.form2 input[type="number"] + input[type="number"],
+.form2 input[type="number"] + label {
+    margin-left: 5px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #47677b;
+    width: 100%;
+    border: none;
+}
+  
+  
+  
