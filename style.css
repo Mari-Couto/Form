@@ -76,5 +76,25 @@ button{
     border: none;
 }
   
+  /* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        height: 720px;
+    }
+}
   
-  
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: 720px;
+    }
+
+    #username, #email, #tel, #senha, #senhaConfirm,
+    .form2 input[type="number"] {
+        font-size: 12px;
+    }
+}
+
+
+
