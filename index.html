@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+    <div class="form">
+        <div class="username">
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite o seu nome">
+        </div>
+
+        <div class="email">
+            <label>Email:</label>
+            <input type="email" placeholder="Digite o seu email">
+        </div>
+
+        <div class="tel">
+            <label>Telefone:</label>
+            <input type="tel" placeholder="Digite o seu número de telefone">
+        </div>
+        
+        <div class="genero">
+            <label>Gênero</label>
+            <input type="text" list="genero" placeholder="Selecione seu gênero">
+            <datalist id="genero">
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Outros</option>
+            </datalist>
+        </div>
+
+        <div class="civil">
+            <label>Estado civil</label>
+            <input type="text" list="genero" placeholder="Selecione seu estado civil">
+            <datalist id="civil">
+                <option>Solteiro</option>
+                <option>Casado</option>
+                <option>Viúvo</option>
+                <option>Divorciado</option>
+            </datalist>
+
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
