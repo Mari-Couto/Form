@@ -25,6 +25,14 @@
             <input type="tel" placeholder="Digite o seu número de telefone">
         </div>
         
+
+        <div>
+            <label>Gênero</label><br>
+            <label>Feminino</label><input type="radio" name="genero">
+            <label>Masculino</label><input type="radio" name="genero">
+            <label>Outro</label><input type="radio" name="genero">
+        </div>
+
         <div class="genero">
             <label>Gênero</label>
             <input type="text" list="genero" placeholder="Selecione seu gênero">
@@ -44,6 +52,26 @@
                 <option>Viúvo</option>
                 <option>Divorciado</option>
             </datalist>
+        </div>
+
+        <div>
+            <label>Data de Nascimento:</label>
+        <!-- Três campos separados para dia, mês e ano -->
+        <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Dia" required>
+        <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mês" required>
+        <input type="number" id="ano" name="ano" min="1900" max="2023" placeholder="Ano" required>
+        
+
+
+        <div class="senha">
+            <label>Crie sua senha</label>
+            <input type="password" placeholder="Digite o sua senha">
+
+        </div>
+
+        <div class="senhaConfirm">
+            <label>Confirme sua senha</label>
+            <input type="password" placeholder="Confirme a sua senha">
 
         </div>
     </div>
