@@ -6,6 +6,7 @@
 }
 
 h1{
+    margin-top: 5px;
    text-align: center;
 }
 
@@ -15,15 +16,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(90deg, #afd6ef 0%, #4dafb1 100%);
+    background: linear-gradient(90deg, #b6d7eb 0%, #4dafb1 100%);
 }
 
 .container{
-    background-color: #ffffffea;
+    background-color: #ffffffc7;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     width:480px;
-    height: 730px;
+    height: 650px;
 }
 .form{
     padding: 18px;
@@ -39,34 +40,36 @@ body{
     margin-bottom: 5px;
 }
 
-#username, #email, #tel, #senha, #senhaConfirm{
+.form2 input{
     border: 2px solid #dcdcdc;
     display: block;
     border-radius: 10px;
     font-size: 14px;
     width: 100%;
     padding: 10px;
-}
-/* Estilizando o campo de data de nascimento */
-.form2 input[type="number"] {
-    border: 2px solid #dcdcdc;
-    border-radius: 10px;
-    font-size: 14px;
-    width: 30%; 
-    padding: 10px;
-}
-.form2 label[for="dia"],
-.form2 label[for="mes"],
-.form2 label[for="ano"] {
-    text-align: center;
-}
-.form2 input[type="number"] + input[type="number"],
-.form2 input[type="number"] + label {
-    margin-left: 5px;
+    background-color: #ffffffcc;
 }
 
+
+/* Estilizaçã dos icones */
+.form2 i{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form2 small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+
+/* Estilização do botão */
 button{
-    margin-top: 20px;
+    margin-top: 8px;
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -76,18 +79,18 @@ button{
     border: none;
 }
   
-  /* Media Query for Responsive Design */
+  /*Responsividade */
 @media (max-width: 600px) {
     .container {
         width: 80%;
-        height: 720px;
+        height: 650px;
     }
 }
   
 @media (max-width: 480px) {
     .container {
         width: 90%;
-        height: 720px;
+        height: 650px;
     }
 
     #username, #email, #tel, #senha, #senhaConfirm,
@@ -95,6 +98,4 @@ button{
         font-size: 12px;
     }
 }
-
-
 

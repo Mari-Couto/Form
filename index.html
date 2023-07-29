@@ -10,52 +10,64 @@
 </head>
 <body>
 
-   
+    
     <div class="container">
         <h1>Formulário</h1>
         <form id="form" class="form">
             <div class="form2">
                 <label for="username">Nome</label>
-                <input type="text" id="username" placeholder="Digite o seu nome">
+                <div class="input-container">
+                    <input type="text" id="username" placeholder="Digite o seu nome">
+                    <i class="fas fa-exclamation-circle icon-exclamation"></i>
+                    <i class="fas fa-check-circle icon-check"></i>
+                </div>
+                <small>mensagem de erro</small>
             </div>
+            
     
             <div class="form2">
                 <label for="email">Email</label>
+                <div class="input-container">
                 <input type="email" id="email" placeholder="Digite o seu email">
+                <i class="fas fa-exclamation-circle icon-exclamation"></i>
+                <i class="fas fa-check-circle icon-check"></i>
+            </div>
+                <small> mensagem de erro</small>
             </div>
     
             <div class="form2">
                 <label for="tel">Telefone</label>
-                <input type="tel" id="tel" placeholder="Digite o seu número de telefone">
+                <div class="input-container">
+                    <input type="tel" id="tel" placeholder="Digite o seu telefone">
+                    <i class="fas fa-exclamation-circle icon-exclamation"></i>
+                    <i class="fas fa-check-circle icon-check"></i>
+                </div>
+                <small>mensagem de erro</small>
             </div>
-    
-            <div class="form2">
-                <label for="data">Data de Nascimento</label><br>
-            <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Dia" required>
-            <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mês" required>
-            <input type="number" id="ano" name="ano" min="1900" max="2023" placeholder="Ano" required><br><br>
             
-    
-    
             <div class="form2">
                 <label for="senha">Crie sua senha</label>
                 <input type="password" id="senha" placeholder="Digite o sua senha">
-    
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small> mensagem de erro</small>
             </div>
     
-            <div class="fomr2">
+            <div class="form2">
                 <label for="senhaConfirm">Confirme sua senha</label>
                 <input type="password" id="senhaConfirm" placeholder="Confirme a sua senha">
-    
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small> mensagem de erro</small>
             </div>
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
 
     
         </form>
         
     </div>
 
-    
+    <script src="https://kit.fontawesome.com/d9beb3820c.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
