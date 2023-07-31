@@ -79,6 +79,18 @@ button{
     border: none;
 }
   
+
+/* error ou success */
+.form2 input.error {
+    border: 2px solid rgb(217, 0, 0);
+  }
+  
+  .form2 input.success {
+    border: 2px solid rgb(0, 255, 0);
+  }
+
+
+  
   /*Responsividade */
 @media (max-width: 600px) {
     .container {
@@ -98,4 +110,3 @@ button{
         font-size: 12px;
     }
 }
-
