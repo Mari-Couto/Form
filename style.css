@@ -49,6 +49,17 @@ body{
     padding: 10px;
     background-color: #ffffffcc;
 }
+/* Estilização do botão */
+button{
+    margin-top: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #47677b;
+    width: 100%;
+    border: none;
+}
 
 
 /* Estilizaçã dos icones */
@@ -65,19 +76,13 @@ body{
     left: 0;
     visibility: hidden;
 }
-
-
-/* Estilização do botão */
-button{
-    margin-top: 8px;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #47677b;
-    width: 100%;
-    border: none;
-}
+.icon-exclamation {
+    color:  rgb(217, 0, 0);;
+  }
+  
+  .icon-check {
+    color: rgb(0, 255, 0);
+  }
   
 
 /* error ou success */
@@ -87,6 +92,11 @@ button{
   
   .form2 input.success {
     border: 2px solid rgb(0, 255, 0);
+  }
+
+  .form2 small{
+    color: rgb(217, 0, 0);
+    font-size: 15px;
   }
 
 
